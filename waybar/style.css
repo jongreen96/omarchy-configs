@@ -1,7 +1,7 @@
 @import "../omarchy/current/theme/waybar.css";
 
 * {
-  background-color: @background;
+  background-color: transparent;
   color: @foreground;
 
   border: none;
@@ -12,11 +12,22 @@
 }
 
 .modules-left {
-  margin-left: 8px;
+  background-color: @background;
+  border-radius: 0 0 10px 0;
+  padding: 4px 8px;
 }
 
 .modules-right {
-  margin-right: 8px;
+  background-color: @background;
+  border-radius: 0 0 0 10px;
+  padding: 4px 8px;
+}
+
+#clock {
+  background-color: @background;
+  border-radius: 0 0 10px 10px;
+  padding: 4px 8px;
+  margin-left: 8.75px;
 }
 
 #workspaces button {
@@ -62,10 +73,6 @@ tooltip {
 
 #custom-update {
   font-size: 10px;
-}
-
-#clock {
-  margin-left: 8.75px;
 }
 
 .hidden {
